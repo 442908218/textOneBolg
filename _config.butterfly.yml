@@ -16,7 +16,7 @@ menu:
 
 # Code Blocks (代码块样式)
 # --------------------------------------
-highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button 是否显示复制按钮
 highlight_lang: true # show the code language 展示代码块语言
 highlight_shrink: false # true: 打开文章默认折叠代码块内容 / false: 打开文章默认展开代码块内容
@@ -52,3 +52,64 @@ subtitle:
   sub:
     - 愿你成为自己的太阳
     - 无需借助谁的光
+
+# 显示文章信息
+post_meta:
+  page:
+    date_type: both # created or updated or both 主页文章日期是创建日或者更新日或都显示
+    categories: true # true or false 主页是否显示分类
+    tags: true # true or false 主页是否显示标籤
+    label: true # true or false 显示描述性文字
+  post:
+    date_type: both # created or updated or both 文章页日期是创建日或者更新日或都显示
+    categories: true # true or false 文章页是否显示分类
+    tags: true # true or false 文章页是否显示标籤
+    label: true # true or false 显示描述性文字
+# 文章版权
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+
+# 侧边栏
+aside:
+  enable: true
+  mobile: true # 手机页面（ 显示宽度 < 768px ）是否显示aside内容
+  position: right # left or right
+  card_author:
+    enable: true
+    description:
+    button:
+      icon: fab fa-github
+      text: Github
+      link: https://github.com/百度127/hexo-theme-butterfly
+  card_announcement:
+    enable: true
+    content: This is my Blog
+  card_recent_post:
+    enable: true
+    limit: 5 # if set 0 will show all
+    sort: date # date or updated
+  card_categories:
+    enable: true
+    limit: 8 # if set 0 will show all
+    expand: none # none/true/false
+  card_tags:
+    enable: true
+    limit: 40 # if set 0 will show all
+    color: false
+  card_archives:
+    enable: true
+    type: monthly # yearly or monthly
+    format: MMMM YYYY # eg: YYYY年MM月
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+    limit: 8 # if set 0 will show all
+  card_webinfo: true
+
+# 访问人数
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
